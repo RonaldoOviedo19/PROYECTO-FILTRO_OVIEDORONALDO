@@ -37,15 +37,9 @@ html{
     padding: 5px 0;
 }
 
-.contenedor-header header .logo img{
-    width: 20%;
-    }
-
-.contenedor-header header .logo a{
-    font-family: Praise;
-    font-size: 66px;
-    color: var(--color1);
-    text-decoration: none;
+.contenedor-header header img{
+    margin: 10% 10%;
+    width: 125px;
 }
 
 .contenedor-header header ul{
@@ -54,11 +48,10 @@ html{
 }
 
 .contenedor-header header nav ul li a{
-    text-align: none;
     font-size: 170%;
     color: var(--color6);
     margin: 0 15px;
-    padding: 3px;
+    padding: 8px;
     transition: .5s;
     text-decoration: none;
 }
@@ -96,9 +89,9 @@ html{
     align-items: center;
 }
 
-.inicio .mitexto h1{
+.inicio .contenido .mitexto h1{
     text-align: center;
-    margin-top: 0;
+    padding-bottom: 3%;
     color: white;
     font-size: 585%;
     font-family: Boogaloo;
@@ -128,27 +121,56 @@ html{
     }
 }
 
-.inicio .contenido-banner{
+.inicio .contenido{
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .contenido{
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .contenido .contenidointro {
     padding: 30px;
     background: linear-gradient(to top, rgba(30, 35, 38, .5),rgba(30, 35, 38, .5));
-    max-width: 450px;
+    width: 40%;
     margin: auto;
     text-align: center;
     border-radius: 40px;
 }
 
-.inicio .contenido-banner img{
-    border: 6px solid var(--color3);
-    border-radius: 100%;
-    display: block;
-    width: 80%;
+.inicio .contenido .contenidomas {
+    padding: 30px;
+    background: linear-gradient(to top, rgba(30, 35, 38, .5),rgba(30, 35, 38, .5));
+    width: 40%;
     margin: auto;
+    text-align: center;
+    border-radius: 40px;
 }
 
-.inicio .contenido-banner h1{
-    margin-top: 40px;
-    font-size: 50px;
-    font-family: Boogaloo;
+.inicio .contenido .redes{
+    padding: 20px;
+    position: absolute;
+    width: 5%;
+    margin: auto;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.inicio .contenido .mitexto{
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
 }
 
 .inicio .contenido-banner p{
@@ -158,26 +180,16 @@ html{
     font-family: Macondo;
 }
 
-.inicio .contenido-banner .redes a{
-    color: var(--color1);
+.inicio .contenido .redes a{
+    color: white;
     display: inline-block;
     text-decoration: none;
-    border: 1px solid var(--color6);
-    border-radius: 100%;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    margin: 20px 5px;
-    font-size: 20px;
-    transition: .3s;
+    line-height: 50px;
+    font-size: 30px;
 }
 
-.inicio .contenido-banner .redes a:hover{
-    background-color: var(--color3);
-    width: 62px;
-    height: 62px;
-    line-height: 62px;
-    font-size: 40px;
+.inicio .contenido .redes a:hover{
+    font-size: 50px;
 }
 
 .sobremi{
