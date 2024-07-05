@@ -8,12 +8,12 @@
 }
 
 :root {
-    --color1: #beed80;
-    --color2: #59d999;
-    --color3: #31ada1;
-    --color4: #51647a;
-    --color5: #1f1e1e;
-    --color6: #ffffff;
+    --color1: #6c63c1;
+    --color2: #f6f9fc;
+    --color3: #65c5df;
+    --color4: #103049;
+    --color5: black;
+    --color6: white;
 }
 
 html{
@@ -21,7 +21,7 @@ html{
 }
 
 .contenedor-header{
-    background: linear-gradient(to top, rgba(30, 35, 38, .2),rgba(30, 35, 38, .2));
+    background: linear-gradient(to top, rgba(34, 30, 38, 0.2),rgba(30, 35, 38, .2));
     position: fixed;
     width: 100%;
     top: 0;
@@ -82,7 +82,7 @@ html{
 
 .inicio{
     padding: 7% 0;
-    background: linear-gradient(to top, rgba(30, 35, 38, .1),rgba(30, 35, 38, 1)),url(fondoinicio.JPG);
+    background: linear-gradient(to top, rgba(30, 35, 38, .5),rgba(30, 35, 38, .5)),url(fondoinicio.JPG);
     background-size: cover;
     height: 100vh;
     color: var(--color2);
@@ -150,7 +150,7 @@ html{
 
 .inicio .contenido .contenidomas {
     padding: 30px;
-    background: linear-gradient(to top, rgba(30, 35, 38, .5),rgba(30, 35, 38, .5));
+    background: linear-gradient(to top, rgba(33, 30, 38, 0.5),rgba(30, 35, 38, .5));
     width: 40%;
     margin: auto;
     text-align: center;
@@ -193,27 +193,90 @@ html{
 }
 
 .sobremi{
-    background: linear-gradient(to top, rgba(30, 35, 38, .8),rgba(30, 35, 38, 1)),url(mifondo.jpg);
+    padding: 0;
+    background: var(--color2);
     background-size: cover;
-    height: 100vh;
-    display: flex;
+    height: 180vh;
     align-items: center;
 }
 
 .sobremi .contenido-seccion{
-    background-color: var(--color5);
-    width: 75%;
-    height: 90%;
+    text-align: center;
+    background-image: url(banner.jpg);
+    width: 100%;
+    height: 35%;
+    margin-top: 0;
     color: var(--color2);
-    margin: 3% 0 0 12%;
-    border-radius: 30px;
+    border-radius: 0 0 50% 50%;
 }
 
-.sobremi h2{
-    font-size: 68px;
+.sobremi .contenido-seccion .contenido h1{
+    color: var(--color6);
+    font-size: 500%;
+    font-family: Boogaloo;
+    padding: 10% 0 2% 0;
+}
+
+.sobremi .contenido-banner{
+    text-align: center;
+    width: 100%;
+    height: 55%;
+    margin-top: 0;
+    color: var(--color2);
+}
+
+.sobremi .contenido-banner .conte-banner{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 55%;
+    margin-top: 0;
+}
+
+.sobremi .contenido-banner .conte-titulo{
+    text-align: center;
+    margin-top: 0;
+    color: var(--color2);
+}
+
+.sobremi .contenido-banner .conte-titulo h1{
+    color: var(--color4);
+    font-size: 500%;
+    font-family: Boogaloo;
+    padding: 0 0 2% 0;
+}
+
+.sobremi .contenido-banner .conte-banner .contenidos{
+    width: 20%;
+    height: 155%;
+    text-align: center;
+    box-shadow: 2px 2px 5px var(--color4);
+    background-color: var(--color6);
+    margin: 1%;
+    padding: 1.5%;
+    color: var(--color2);
+}
+
+.sobremi .contenido-banner .conte-banner .contenidos h3{
+    color: var(--color1);
+    font-size: 300%;
+    font-family: Boogaloo;
+    padding: 2% 0 0 0;
+}
+
+.sobremi .contenido-banner .conte-banner .contenidos img{
+    width: 50%;
+    box-shadow: 2px 2px 20px #00000044;
+    border-radius: 50%;
+}
+
+.sobremi h1{
+    color: #51647a;
+    font-size: 500%;
     font-family: Boogaloo;
     text-align: center;
-    padding: 30px 0 0 0;
+    padding: 10% 0 0 0;
 }
 
 .sobremi .contenido-seccion p{
@@ -221,6 +284,10 @@ html{
     font-size: 33px;
     line-height: 35px;
     margin: 10px 70px 60px 70px;
+}
+
+.sobremi .contenido-seccion img{
+    padding-top: 2%;
 }
 
 .sobremi .contenido-seccion p span{
