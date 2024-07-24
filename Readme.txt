@@ -1,5 +1,30 @@
+# Fundación Capaz - Página CSS
 
+Este proyecto contiene los archivos necesarios para una página web simple utilizando únicamente HTML y CSS. La página está diseñada para la Fundación Capaz, una organización que apoya la cultura y el arte.
 
-Mi manera de diseñar esta pagina fue primeramente opte por buscar paginas web y de ahi empezar a tener una Lluvias de ideas para esto me apoye de esta pagina que me gusto este diseño lo cual lo utilice para una de mis secciones de mi pagina y asi poco a poco se me iban ocurriendo nuevas ideas.
+## Contenido del Repositorio
 
-Incialmente no use un diseño base ya que siempre inicio a hacer un diseño y se me van ocurriendo cosas con el paso del tiempo y de los errores que vaya cometiendo de esa manera soy mas eficiente y se me ocurren mejores ideas.
+El repositorio incluye los siguientes archivos:
+
+- **index.html**: El archivo principal HTML que estructura la página.
+- **styles.css**: Archivo CSS que contiene los estilos para la página.
+- **images/**: Directorio que contiene las imágenes utilizadas en la página.
+
+## Estructura del Proyecto
+
+fundacion-capaz/
+│
+├── index.html
+├── styles.css
+└── images/
+├── banner.jpg
+└── logo.png
+
+## Uso
+
+Para ver la página en acción, simplemente abre el archivo `index.html` en tu navegador web.
+
+## Recursos Utilizados
+
+- **Fonts**: Utilizamos la fuente "Roboto" para el texto principal.
+- **Imágenes**: Las imágenes utilizadas se encuentran en el directorio `images/`.
