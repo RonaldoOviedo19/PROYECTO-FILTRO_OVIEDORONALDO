@@ -912,7 +912,533 @@ html{
 
 }
 
-@media (max-width:440px) {
+@media (max-width:370px) and  (min-width:100px) {
+
+
+    .contenedor-header header{
+        margin: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    .contenedor-header header img{
+        margin: 10% 5%;
+        width: 55px;
+    }
+
+    .contenedor-header header nav ul li a{
+        font-size: 90%;
+        font-family: var(--font3);
+        color: var(--color6);
+        margin: 0 2px;
+        padding: 3.5px;
+        transition: .5s;
+        text-decoration: none;
+    }
+
+    .contenedor-header header nav ul li a:hover{
+        font-size: 80%;
+        animation: letrazoom 2s linear 0s infinite;
+    }
+
+    @keyframes letrazoom {
+        25%{
+            font-size: 100%;
+            color: black;
+        }
+        50%{
+            font-size: 80%;
+            color: white;
+        }
+        75%{
+            font-size: 80%;
+            color: black;
+        }
+        100%{
+            font-size: 100%;
+            color: white;
+        }
+    }
+
+    .inicio{
+        padding: 15% 0;
+        background: linear-gradient(to top, rgba(30, 35, 38, .5),rgba(30, 35, 38, .5)),url(fondoinicio.JPG);
+        width: 150%;
+        background-size: cover;
+        display: block;
+        height: 130vh;
+        color: var(--color2);
+        align-items: center;
+    }
+    
+    
+    .inicio .contenido .mitexto h1{
+        font-size: 350%;
+        animation: letraaparece 2s linear 1s 1;
+    }
+    
+    @keyframes letraaparece{
+        0%{
+            opacity: 0;
+            font-size: 260%;
+        }
+        25%{
+            opacity: 0.25;
+            font-size: 240%;
+        }
+        50%{
+            opacity: 0.50;
+            font-size: 220%;
+        }
+        75%{
+            opacity: 0.75;
+            font-size: 210%;
+        }
+        100%{
+            opacity: 1;
+            font-size: 200%;
+        }
+    }
+
+    .inicio .contenidos{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: block;
+        margin: auto;
+        border-radius: 40px;
+    }
+
+    .inicio .contenidos .contenidointro {
+        padding: 0;
+        width: 86%;
+        font-family: var(--font1);
+        margin: 0 0 0 8%;
+        text-align: justify;
+        border-radius: 40px;
+    }
+    
+    .inicio .contenidos img {
+        width: 80%;
+        padding-top: 20px;
+        margin: auto;
+        text-align: center;
+        border-radius: 40px;
+    }
+
+    .inicio .contenidos p{
+        padding: 15px;
+        font-size: 150%;
+    }
+
+    .inicio .contenido .redes a{
+        opacity: 0;
+        line-height: 25px;
+        font-size: 15px;
+    }
+    
+    .inicio .contenido .redes a:hover{
+        font-size: 35px;
+    }
+
+    .quienessomos{
+        padding: 0;
+        background: var(--color2);
+        background-size: cover;
+        width: 150%;
+        height: 460vh;
+        align-items: center;
+    }
+    
+    .quienessomos .contenido-seccion{
+        text-align: center;
+        background-image: url(banner.jpg);
+        width: 100%;
+        height: 10%;
+        color: var(--color2);
+        border-radius: 0 0 50% 50%;
+    }
+    
+    .quienessomos .contenido-seccion .contenido h1{
+        color: var(--color6);
+        font-size: 360%;
+        font-family: var(--font6);
+        padding: 12% 0 0 0;
+    }
+    
+    .quienessomos .contenido-seccion .contenido img{
+        padding: 0;
+        width: 75%;
+    }
+    
+    .quienessomos .contenido-banner{
+        text-align: center;
+        width: 100%;
+        margin-top: 0;
+        color: var(--color2);
+    }
+    
+    .quienessomos .contenido-banner .conte-banner{
+        display: block;
+        padding: 0 12%;
+        justify-content: center;
+        width: 100%;
+        height: 130%;
+        margin-top: 0;
+    }
+    
+    .quienessomos .contenido-banner .conte-titulo{
+        text-align: center;
+        margin-top: 0;
+        color: var(--color2);
+    }
+    
+    .quienessomos .contenido-banner .conte-titulo h1{
+        color: var(--color4);
+        font-size: 350%;
+        font-family: var(--font6);
+        padding: 0 0 0 0;
+    }
+    
+    .quienessomos .contenido-banner .conte-banner .contenidos{
+        width: 100%;
+        height: 200%;
+        text-align: center;
+        margin-top: 10%;
+        box-shadow: 2px 2px 5px var(--color4);
+        background-color: var(--color6);
+        color: var(--color2);
+    }
+    
+    .quienessomos .contenido-banner .conte-banner .contenidos h3{
+        color: var(--color1);
+        font-size: 280%;
+        font-family: var(--font5);
+        padding: 20px 0 0 0;
+    }
+    
+    .quienessomos .contenido-banner .conte-banner .contenidos p{
+        margin: 30px;
+        text-align: justify;
+        color: var(--color4);
+        font-size: 22px;
+        font-family: var(--font5);
+    }
+    
+    .quienessomos .contenido-banner .conte-banner .contenidos img{
+        box-shadow: 0 0 45px var(--color1);
+        padding: 0 0 0 0;
+        margin-top: 42px;
+        width: 220px;
+        height: 220px;
+        border-radius: 60%;
+    }
+    
+    .quienessomos .contenido-seccion p{
+        text-align: justify;
+        font-size: 33px;
+        line-height: 35px;
+        margin: 10px 70px 60px 70px;
+    }
+    
+    .quienessomos .contenido-seccion img{
+        padding-top: 2%;
+    }
+
+    .danzas{
+        border-width: 10px;
+        border-color: var(--color1);
+        border-top-style: dotted;
+        background-color: var(--color2);
+        background-size: cover;
+        width: 150%;
+        height: 200vh;
+        align-items: center;
+    }
+    
+    .danzas .contenido-seccion{
+        display: block;
+        width: 100%;
+        height: 40%;
+        color: var(--color2);
+        border-radius: 30px;
+    }
+    
+    .danzas .contenido-seccion .contenidotexto{
+        margin: 10% 10%;
+        background-color: var(--color1);
+        width: 80%;
+        height: 52%;
+        color: var(--color2);
+        border-radius: 30px;
+    }
+    
+    .danzas .contenido-seccion .contenidoimg{
+        margin: 10% 10%;
+        text-align: center;
+        width: 80%;
+        height: 45%;
+        color: var(--color2);
+        border-radius: 30px;
+    }
+    
+    .danzas .contenido-seccion img{
+        box-shadow: 0 0 45px var(--color4);
+        height: 100%;
+        border-radius: 40px;
+    }
+    
+    .danzas .contenido-seccion p{
+        text-align: justify;
+        padding: 15px 30px;
+        font-size: 22px;
+        font-family: var(--font5);
+        color: var(--color6);
+    }
+
+    .musica{
+        border-width: 10px;
+        border-color: var(--color1);
+        border-top-style: dotted;
+        background-color: var(--color2);
+        background-size: cover;
+        width: 150%;
+        height: 575vh;
+        align-items: center;
+    }
+    
+    .musica .contenido-seccion{
+        display: block;
+        width: 100%;
+        height: 32%;
+        color: var(--color2);
+        margin: 35px 0 0 0;
+        border-radius: 30px;
+    }
+    
+    .musica .contenido-seccion .contenidotexto{
+        margin-left: 10%;
+        background-color: var(--color4);
+        width: 80%;
+        height: 33%;
+        color: var(--color2);
+        border-radius: 30px;
+    }
+    
+    .musica .contenido-seccion .contenidoimg{
+        margin: 0 0 0 0;
+        padding: 25px;
+        width: 100%;
+        height: 33%;
+        color: var(--color2);
+    }
+    
+    .musica .contenido-seccion .contenidoimg1{
+        margin: 0 0 0 0;
+        padding: 25px;
+        background-color: var(--color2);
+        width: 100%;
+        height: 33%;
+        color: var(--color2);
+    }
+    
+    .musica .contenido-seccion .contenidoimg2{
+        margin: 0 70px 0 0;
+        padding: 25px;
+        background-color: var(--color2);
+        width: 100%;
+        height: 33%;
+        color: var(--color2);
+    }
+    
+    .musica .contenido-seccion img{
+        box-shadow: 0 0 45px var(--color1);
+        width: 70%;
+        height: 100%;
+        border-radius: 20%;
+    }
+    
+    .musica .contenido-seccion p{
+        text-align: justify;
+        padding: 20px 30px;
+        font-size: 26px;
+        font-family: var(--font6);
+        color: var(--color6);
+    }
+
+    .rutacomunitaria{
+        border-width: 10px;
+        border-color: var(--color1);
+        border-top-style: dotted;
+        background-color: var(--color2);
+        background-size: cover;
+        width: 150%;
+        height: 420vh;
+        display: block;
+        align-items: center;
+    }
+    
+    .rutacomunitaria .contenido-seccion{
+        box-shadow: 0 0 25px var(--color4);
+        background-color: var(--color1);
+        width: 80%;
+        height: 31%;
+        color: var(--color2);
+        margin: 10% 0 0 10%;
+        border-radius: 30px;
+    }
+    
+    .rutacomunitaria h2{
+        font-size: 45px;
+        font-family: var(--font5);
+        text-align: center;
+        padding: 20px 0 22px 0;
+    }
+    
+    .rutacomunitaria .contenido-seccion p{
+        text-align: justify;
+        font-size: 25px;
+        color: var(--color6);
+        line-height: 28px;
+        margin: 15px 30px 25px 30px;
+        font-family: var(--font5);
+    }
+    
+    .rutacomunitaria .contenido-seccion img{
+        text-align: center;
+        border-radius: 10%;
+        width: 70%;
+        margin: 20px 75px;
+    }
+    
+    .rutacomunitaria .contenido-seccion video{
+        text-align: center;
+        width: 80%;
+        margin: 0 10%;
+        border-radius: 15px;
+    }
+    
+    .contactanos {
+        border-width: 10px;
+        border-color: var(--color1);
+        border-top-style: dotted;
+        padding: 60px 0;
+        background-color: var(--color2);
+        background-size: cover;
+        width: 150%;
+        height: 160vh;
+        color: var(--color2);
+    }
+    
+    .contactanos .contenedor{
+        justify-content: center;
+        width: 100%;
+        border-radius: 40px;
+    }
+    
+    .contactanos .contenedor .contenido-banner{
+        position: absolute;
+        width: 90%;
+        height: 45%;
+        background-color: var(--color1);
+        text-align: center;
+        border-radius: 40px;
+    }
+    
+    .contactanos .contenedor .contenido{
+        position: absolute;
+        width: 90%;
+        height: 45%;
+        padding: 45px 10px;
+        background-color: var(--color4);
+        text-align: center;
+        border-radius: 40px;
+    }
+    
+    .contactanos .contenido:hover {
+        animation: desaparecer 2s linear 0s 1;
+        opacity: 0;
+    }
+    
+    .contactanos .contenido-banner img{
+        border: 6px solid var(--color3);
+        border-radius: 10%;
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .contactanos h1{
+        font-size: 50px;
+        font-family: var(--font4);
+    }
+    
+    .contactanos .contenido-banner h1{
+        padding-top: 20px;
+        font-size: 30px;
+        font-family: var(--font4);
+    }
+    
+    .contactanos h2{
+        margin-top: 65%;
+        text-align: center;
+        color: var(--color4);
+        font-size: 75px;
+        font-family: var(--font2);
+        animation: desaparecer 0.7s linear 2s infinite;
+    }
+    
+    .contactanos .col .contenedorredes{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .contactanos .col .contenedorredes .redes{
+        width: 180px;
+        height: 180px;
+        background-color: var(--color4);
+        border-radius: 50%;
+        margin: 15px 45px 15px 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    
+    .contactanos .col .contenedorredes .redes:hover{
+        font-size: 28px;
+        margin-bottom: 15px;
+        width: 140px;
+        height: 140px;
+        background-color: var(--color4);
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    
+    .contactanos .col .contenedorredes .redes a i{
+        color: var(--color6);
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
+    .contactanos .col .contenedorredes .redes span{
+        color: var(--color6);
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width:380px) and  (min-width:375px) {
+
 
     .contenedor-header header{
         margin: 0 20px;
@@ -1047,7 +1573,7 @@ html{
         background: var(--color2);
         background-size: cover;
         width: 150%;
-        height: 415vh;
+        height: 505vh;
         align-items: center;
     }
     
@@ -1062,7 +1588,7 @@ html{
     
     .quienessomos .contenido-seccion .contenido h1{
         color: var(--color6);
-        font-size: 400%;
+        font-size: 360%;
         font-family: var(--font6);
         padding: 12% 0 0 0;
     }
@@ -1153,7 +1679,7 @@ html{
         background-color: var(--color2);
         background-size: cover;
         width: 150%;
-        height: 180vh;
+        height: 220vh;
         align-items: center;
     }
     
@@ -1169,7 +1695,7 @@ html{
         margin: 10% 10%;
         background-color: var(--color1);
         width: 80%;
-        height: 45%;
+        height: 52%;
         color: var(--color2);
         border-radius: 30px;
     }
@@ -1204,14 +1730,14 @@ html{
         background-color: var(--color2);
         background-size: cover;
         width: 150%;
-        height: 500vh;
+        height: 650vh;
         align-items: center;
     }
     
     .musica .contenido-seccion{
         display: block;
         width: 100%;
-        height: 32%;
+        height: 28%;
         color: var(--color2);
         margin: 35px 0 0 0;
         border-radius: 30px;
@@ -1274,7 +1800,7 @@ html{
         background-color: var(--color2);
         background-size: cover;
         width: 150%;
-        height: 400vh;
+        height: 475vh;
         display: block;
         align-items: center;
     }
@@ -1433,6 +1959,1586 @@ html{
     .contactanos .col .contenedorredes .redes span{
         color: var(--color6);
         font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width:400px) and  (min-width:385px) {
+
+    .contenedor-header header{
+        margin: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    .contenedor-header header img{
+        margin: 10% 5%;
+        width: 55px;
+    }
+
+    .contenedor-header header nav ul li a{
+        font-size: 90%;
+        font-family: var(--font3);
+        color: var(--color6);
+        margin: 0 2px;
+        padding: 3.5px;
+        transition: .5s;
+        text-decoration: none;
+    }
+
+    .contenedor-header header nav ul li a:hover{
+        font-size: 80%;
+        animation: letrazoom 2s linear 0s infinite;
+    }
+
+    @keyframes letrazoom {
+        25%{
+            font-size: 100%;
+            color: black;
+        }
+        50%{
+            font-size: 80%;
+            color: white;
+        }
+        75%{
+            font-size: 80%;
+            color: black;
+        }
+        100%{
+            font-size: 100%;
+            color: white;
+        }
+    }
+
+    .inicio{
+        padding: 13% 0;
+        background: linear-gradient(to top, rgba(30, 35, 38, .5),rgba(30, 35, 38, .5)),url(fondoinicio.JPG);
+        width: 150%;
+        background-size: cover;
+        display: block;
+        height: 120vh;
+        color: var(--color2);
+        align-items: center;
+    }
+    
+    
+    .inicio .contenido .mitexto h1{
+        font-size: 280%;
+        animation: letraaparece 2s linear 1s 1;
+    }
+    
+    @keyframes letraaparece{
+        0%{
+            opacity: 0;
+            font-size: 260%;
+        }
+        25%{
+            opacity: 0.25;
+            font-size: 240%;
+        }
+        50%{
+            opacity: 0.50;
+            font-size: 220%;
+        }
+        75%{
+            opacity: 0.75;
+            font-size: 210%;
+        }
+        100%{
+            opacity: 1;
+            font-size: 200%;
+        }
+    }
+
+    .inicio .contenidos{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+    }
+
+    .inicio .contenidos .contenidointro {
+        padding: 0;
+        width: 86%;
+        font-family: var(--font1);
+        margin: 0 0 0 8%;
+        text-align: justify;
+        border-radius: 40px;
+    }
+    
+    .inicio .contenidos img {
+        width: 80%;
+        padding-top: 20px;
+        margin: auto;
+        text-align: center;
+        border-radius: 40px;
+    }
+
+    .inicio .contenidos p{
+        padding: 15px;
+        font-size: 150%;
+    }
+
+    .inicio .contenido .redes a{
+        opacity: 0;
+        line-height: 25px;
+        font-size: 15px;
+    }
+    
+    .inicio .contenido .redes a:hover{
+        font-size: 35px;
+    }
+
+    .quienessomos{
+        padding: 0;
+        background: var(--color2);
+        background-size: cover;
+        width: 150%;
+        height: 405vh;
+        align-items: center;
+    }
+    
+    .quienessomos .contenido-seccion{
+        text-align: center;
+        background-image: url(banner.jpg);
+        width: 100%;
+        height: 10%;
+        color: var(--color2);
+        border-radius: 0 0 50% 50%;
+    }
+    
+    .quienessomos .contenido-seccion .contenido h1{
+        color: var(--color6);
+        font-size: 400%;
+        font-family: var(--font6);
+        padding: 12% 0 0 0;
+    }
+    
+    .quienessomos .contenido-seccion .contenido img{
+        padding: 0;
+        width: 75%;
+    }
+    
+    .quienessomos .contenido-banner{
+        text-align: center;
+        width: 100%;
+        margin-top: 0;
+        color: var(--color2);
+    }
+    
+    .quienessomos .contenido-banner .conte-banner{
+        display: block;
+        padding: 0 12%;
+        justify-content: center;
+        width: 100%;
+        height: 130%;
+        margin-top: 0;
+    }
+    
+    .quienessomos .contenido-banner .conte-titulo{
+        text-align: center;
+        margin-top: 0;
+        color: var(--color2);
+    }
+    
+    .quienessomos .contenido-banner .conte-titulo h1{
+        color: var(--color4);
+        font-size: 350%;
+        font-family: var(--font6);
+        padding: 0 0 0 0;
+    }
+    
+    .quienessomos .contenido-banner .conte-banner .contenidos{
+        width: 100%;
+        height: 200%;
+        text-align: center;
+        margin-top: 10%;
+        box-shadow: 2px 2px 5px var(--color4);
+        background-color: var(--color6);
+        color: var(--color2);
+    }
+    
+    .quienessomos .contenido-banner .conte-banner .contenidos h3{
+        color: var(--color1);
+        font-size: 280%;
+        font-family: var(--font5);
+        padding: 20px 0 0 0;
+    }
+    
+    .quienessomos .contenido-banner .conte-banner .contenidos p{
+        margin: 30px;
+        text-align: justify;
+        color: var(--color4);
+        font-size: 22px;
+        font-family: var(--font5);
+    }
+    
+    .quienessomos .contenido-banner .conte-banner .contenidos img{
+        box-shadow: 0 0 45px var(--color1);
+        padding: 0 0 0 0;
+        margin-top: 42px;
+        width: 220px;
+        height: 220px;
+        border-radius: 60%;
+    }
+    
+    .quienessomos .contenido-seccion p{
+        text-align: justify;
+        font-size: 33px;
+        line-height: 35px;
+        margin: 10px 70px 60px 70px;
+    }
+    
+    .quienessomos .contenido-seccion img{
+        padding-top: 2%;
+    }
+
+    .danzas{
+        border-width: 10px;
+        border-color: var(--color1);
+        border-top-style: dotted;
+        background-color: var(--color2);
+        background-size: cover;
+        width: 150%;
+        height: 190vh;
+        align-items: center;
+    }
+    
+    .danzas .contenido-seccion{
+        display: block;
+        width: 100%;
+        height: 40%;
+        color: var(--color2);
+        border-radius: 30px;
+    }
+    
+    .danzas .contenido-seccion .contenidotexto{
+        margin: 10% 10%;
+        background-color: var(--color1);
+        width: 80%;
+        height: 52%;
+        color: var(--color2);
+        border-radius: 30px;
+    }
+    
+    .danzas .contenido-seccion .contenidoimg{
+        margin: 10% 10%;
+        text-align: center;
+        width: 80%;
+        height: 45%;
+        color: var(--color2);
+        border-radius: 30px;
+    }
+    
+    .danzas .contenido-seccion img{
+        box-shadow: 0 0 45px var(--color4);
+        height: 100%;
+        border-radius: 40px;
+    }
+    
+    .danzas .contenido-seccion p{
+        text-align: justify;
+        padding: 15px 30px;
+        font-size: 24px;
+        font-family: var(--font5);
+        color: var(--color6);
+    }
+
+    .musica{
+        border-width: 10px;
+        border-color: var(--color1);
+        border-top-style: dotted;
+        background-color: var(--color2);
+        background-size: cover;
+        width: 150%;
+        height: 570vh;
+        align-items: center;
+    }
+    
+    .musica .contenido-seccion{
+        display: block;
+        width: 100%;
+        height: 32%;
+        color: var(--color2);
+        margin: 35px 0 0 0;
+        border-radius: 30px;
+    }
+    
+    .musica .contenido-seccion .contenidotexto{
+        margin-left: 10%;
+        background-color: var(--color4);
+        width: 80%;
+        height: 33%;
+        color: var(--color2);
+        border-radius: 30px;
+    }
+    
+    .musica .contenido-seccion .contenidoimg{
+        margin: 0 0 0 0;
+        padding: 25px;
+        width: 100%;
+        height: 33%;
+        color: var(--color2);
+    }
+    
+    .musica .contenido-seccion .contenidoimg1{
+        margin: 0 0 0 0;
+        padding: 25px;
+        background-color: var(--color2);
+        width: 100%;
+        height: 33%;
+        color: var(--color2);
+    }
+    
+    .musica .contenido-seccion .contenidoimg2{
+        margin: 0 70px 0 0;
+        padding: 25px;
+        background-color: var(--color2);
+        width: 100%;
+        height: 33%;
+        color: var(--color2);
+    }
+    
+    .musica .contenido-seccion img{
+        box-shadow: 0 0 45px var(--color1);
+        width: 70%;
+        height: 100%;
+        border-radius: 20%;
+    }
+    
+    .musica .contenido-seccion p{
+        text-align: justify;
+        padding: 20px 20px;
+        font-size: 29px;
+        font-family: var(--font6);
+        color: var(--color6);
+    }
+
+    .rutacomunitaria{
+        border-width: 10px;
+        border-color: var(--color1);
+        border-top-style: dotted;
+        background-color: var(--color2);
+        background-size: cover;
+        width: 150%;
+        height: 400vh;
+        display: block;
+        align-items: center;
+    }
+    
+    .rutacomunitaria .contenido-seccion{
+        box-shadow: 0 0 25px var(--color4);
+        background-color: var(--color1);
+        width: 80%;
+        height: 31%;
+        color: var(--color2);
+        margin: 10% 0 0 10%;
+        border-radius: 30px;
+    }
+    
+    .rutacomunitaria h2{
+        font-size: 45px;
+        font-family: var(--font5);
+        text-align: center;
+        padding: 40px 0 22px 0;
+    }
+    
+    .rutacomunitaria .contenido-seccion p{
+        text-align: justify;
+        font-size: 25px;
+        color: var(--color6);
+        line-height: 28px;
+        margin: 15px 30px 25px 30px;
+        font-family: var(--font5);
+    }
+    
+    .rutacomunitaria .contenido-seccion img{
+        text-align: center;
+        border-radius: 10%;
+        width: 70%;
+        margin: 20px 75px;
+    }
+    
+    .rutacomunitaria .contenido-seccion video{
+        text-align: center;
+        width: 80%;
+        margin: 0 10%;
+        border-radius: 15px;
+    }
+    
+    .contactanos {
+        border-width: 10px;
+        border-color: var(--color1);
+        border-top-style: dotted;
+        padding: 60px 0;
+        background-color: var(--color2);
+        background-size: cover;
+        width: 150%;
+        height: 160vh;
+        color: var(--color2);
+    }
+    
+    .contactanos .contenedor{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        border-radius: 40px;
+    }
+    
+    .contactanos .contenedor .contenido-banner{
+        position: absolute;
+        width: 85%;
+        height: 40%;
+        background-color: var(--color1);
+        text-align: center;
+        border-radius: 40px;
+    }
+    
+    .contactanos .contenedor .contenido{
+        position: absolute;
+        width: 85%;
+        height: 40%;
+        padding: 55px 10px;
+        background-color: var(--color4);
+        text-align: center;
+        border-radius: 40px;
+    }
+    
+    .contactanos .contenido:hover {
+        animation: desaparecer 2s linear 0s 1;
+        opacity: 0;
+    }
+    
+    .contactanos .contenido-banner img{
+        border: 6px solid var(--color3);
+        border-radius: 10%;
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .contactanos h1{
+        font-size: 50px;
+        font-family: var(--font4);
+    }
+    
+    .contactanos .contenido-banner h1{
+        padding-top: 20px;
+        font-size: 30px;
+        font-family: var(--font4);
+    }
+    
+    .contactanos h2{
+        margin-top: 65%;
+        text-align: center;
+        color: var(--color4);
+        font-size: 75px;
+        font-family: var(--font2);
+        animation: desaparecer 0.7s linear 2s infinite;
+    }
+    
+    .contactanos .col .contenedorredes{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .contactanos .col .contenedorredes .redes{
+        width: 200px;
+        height: 200px;
+        background-color: var(--color4);
+        border-radius: 50%;
+        margin: 15px 45px 15px 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    
+    .contactanos .col .contenedorredes .redes:hover{
+        font-size: 28px;
+        margin-bottom: 15px;
+        width: 140px;
+        height: 140px;
+        background-color: var(--color4);
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    
+    .contactanos .col .contenedorredes .redes a i{
+        color: var(--color6);
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
+    .contactanos .col .contenedorredes .redes span{
+        color: var(--color6);
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width:440px) and  (min-width:410px) {
+
+
+    .contenedor-header header{
+        margin: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    .contenedor-header header img{
+        margin: 10% 5%;
+        width: 55px;
+    }
+
+    .contenedor-header header nav ul li a{
+        font-size: 90%;
+        font-family: var(--font3);
+        color: var(--color6);
+        margin: 0 2px;
+        padding: 3.5px;
+        transition: .5s;
+        text-decoration: none;
+    }
+
+    .contenedor-header header nav ul li a:hover{
+        font-size: 80%;
+        animation: letrazoom 2s linear 0s infinite;
+    }
+
+    @keyframes letrazoom {
+        25%{
+            font-size: 100%;
+            color: black;
+        }
+        50%{
+            font-size: 80%;
+            color: white;
+        }
+        75%{
+            font-size: 80%;
+            color: black;
+        }
+        100%{
+            font-size: 100%;
+            color: white;
+        }
+    }
+
+    .inicio{
+        padding: 13% 0;
+        background: linear-gradient(to top, rgba(30, 35, 38, .5),rgba(30, 35, 38, .5)),url(fondoinicio.JPG);
+        width: 150%;
+        background-size: cover;
+        display: block;
+        height: 110vh;
+        color: var(--color2);
+        align-items: center;
+    }
+    
+    
+    .inicio .contenido .mitexto h1{
+        font-size: 280%;
+        animation: letraaparece 2s linear 1s 1;
+    }
+    
+    @keyframes letraaparece{
+        0%{
+            opacity: 0;
+            font-size: 260%;
+        }
+        25%{
+            opacity: 0.25;
+            font-size: 240%;
+        }
+        50%{
+            opacity: 0.50;
+            font-size: 220%;
+        }
+        75%{
+            opacity: 0.75;
+            font-size: 210%;
+        }
+        100%{
+            opacity: 1;
+            font-size: 200%;
+        }
+    }
+
+    .inicio .contenidos{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+    }
+
+    .inicio .contenidos .contenidointro {
+        padding: 0;
+        width: 86%;
+        font-family: var(--font1);
+        margin: 0 0 0 8%;
+        text-align: justify;
+        border-radius: 40px;
+    }
+    
+    .inicio .contenidos img {
+        width: 80%;
+        padding-top: 20px;
+        margin: auto;
+        text-align: center;
+        border-radius: 40px;
+    }
+
+    .inicio .contenidos p{
+        padding: 15px;
+        font-size: 150%;
+    }
+
+    .inicio .contenido .redes a{
+        opacity: 0;
+        line-height: 25px;
+        font-size: 15px;
+    }
+    
+    .inicio .contenido .redes a:hover{
+        font-size: 35px;
+    }
+
+    .quienessomos{
+        padding: 0;
+        background: var(--color2);
+        background-size: cover;
+        width: 150%;
+        height: 385vh;
+        align-items: center;
+    }
+    
+    .quienessomos .contenido-seccion{
+        text-align: center;
+        background-image: url(banner.jpg);
+        width: 100%;
+        height: 10%;
+        color: var(--color2);
+        border-radius: 0 0 50% 50%;
+    }
+    
+    .quienessomos .contenido-seccion .contenido h1{
+        color: var(--color6);
+        font-size: 400%;
+        font-family: var(--font6);
+        padding: 12% 0 0 0;
+    }
+    
+    .quienessomos .contenido-seccion .contenido img{
+        padding: 0;
+        width: 75%;
+    }
+    
+    .quienessomos .contenido-banner{
+        text-align: center;
+        width: 100%;
+        margin-top: 0;
+        color: var(--color2);
+    }
+    
+    .quienessomos .contenido-banner .conte-banner{
+        display: block;
+        padding: 0 12%;
+        justify-content: center;
+        width: 100%;
+        height: 130%;
+        margin-top: 0;
+    }
+    
+    .quienessomos .contenido-banner .conte-titulo{
+        text-align: center;
+        margin-top: 0;
+        color: var(--color2);
+    }
+    
+    .quienessomos .contenido-banner .conte-titulo h1{
+        color: var(--color4);
+        font-size: 350%;
+        font-family: var(--font6);
+        padding: 0 0 0 0;
+    }
+    
+    .quienessomos .contenido-banner .conte-banner .contenidos{
+        width: 100%;
+        height: 200%;
+        text-align: center;
+        margin-top: 10%;
+        box-shadow: 2px 2px 5px var(--color4);
+        background-color: var(--color6);
+        color: var(--color2);
+    }
+    
+    .quienessomos .contenido-banner .conte-banner .contenidos h3{
+        color: var(--color1);
+        font-size: 280%;
+        font-family: var(--font5);
+        padding: 20px 0 0 0;
+    }
+    
+    .quienessomos .contenido-banner .conte-banner .contenidos p{
+        margin: 30px;
+        text-align: justify;
+        color: var(--color4);
+        font-size: 22px;
+        font-family: var(--font5);
+    }
+    
+    .quienessomos .contenido-banner .conte-banner .contenidos img{
+        box-shadow: 0 0 45px var(--color1);
+        padding: 0 0 0 0;
+        margin-top: 42px;
+        width: 220px;
+        height: 220px;
+        border-radius: 60%;
+    }
+    
+    .quienessomos .contenido-seccion p{
+        text-align: justify;
+        font-size: 33px;
+        line-height: 35px;
+        margin: 10px 70px 60px 70px;
+    }
+    
+    .quienessomos .contenido-seccion img{
+        padding-top: 2%;
+    }
+
+    .danzas{
+        border-width: 10px;
+        border-color: var(--color1);
+        border-top-style: dotted;
+        background-color: var(--color2);
+        background-size: cover;
+        width: 150%;
+        height: 170vh;
+        align-items: center;
+    }
+    
+    .danzas .contenido-seccion{
+        display: block;
+        width: 100%;
+        height: 40%;
+        color: var(--color2);
+        border-radius: 30px;
+    }
+    
+    .danzas .contenido-seccion .contenidotexto{
+        margin: 10% 10%;
+        background-color: var(--color1);
+        width: 80%;
+        height: 52%;
+        color: var(--color2);
+        border-radius: 30px;
+    }
+    
+    .danzas .contenido-seccion .contenidoimg{
+        margin: 10% 10%;
+        text-align: center;
+        width: 80%;
+        height: 45%;
+        color: var(--color2);
+        border-radius: 30px;
+    }
+    
+    .danzas .contenido-seccion img{
+        box-shadow: 0 0 45px var(--color4);
+        height: 100%;
+        border-radius: 40px;
+    }
+    
+    .danzas .contenido-seccion p{
+        text-align: justify;
+        padding: 15px 30px;
+        font-size: 24px;
+        font-family: var(--font5);
+        color: var(--color6);
+    }
+
+    .musica{
+        border-width: 10px;
+        border-color: var(--color1);
+        border-top-style: dotted;
+        background-color: var(--color2);
+        background-size: cover;
+        width: 150%;
+        height: 500vh;
+        align-items: center;
+    }
+    
+    .musica .contenido-seccion{
+        display: block;
+        width: 100%;
+        height: 32%;
+        color: var(--color2);
+        margin: 35px 0 0 0;
+        border-radius: 30px;
+    }
+    
+    .musica .contenido-seccion .contenidotexto{
+        margin-left: 10%;
+        background-color: var(--color4);
+        width: 80%;
+        height: 33%;
+        color: var(--color2);
+        border-radius: 30px;
+    }
+    
+    .musica .contenido-seccion .contenidoimg{
+        margin: 0 0 0 0;
+        padding: 25px;
+        width: 100%;
+        height: 33%;
+        color: var(--color2);
+    }
+    
+    .musica .contenido-seccion .contenidoimg1{
+        margin: 0 0 0 0;
+        padding: 25px;
+        background-color: var(--color2);
+        width: 100%;
+        height: 33%;
+        color: var(--color2);
+    }
+    
+    .musica .contenido-seccion .contenidoimg2{
+        margin: 0 70px 0 0;
+        padding: 25px;
+        background-color: var(--color2);
+        width: 100%;
+        height: 33%;
+        color: var(--color2);
+    }
+    
+    .musica .contenido-seccion img{
+        box-shadow: 0 0 45px var(--color1);
+        width: 70%;
+        height: 100%;
+        border-radius: 20%;
+    }
+    
+    .musica .contenido-seccion p{
+        text-align: justify;
+        padding: 20px 20px;
+        font-size: 29px;
+        font-family: var(--font6);
+        color: var(--color6);
+    }
+
+    .rutacomunitaria{
+        border-width: 10px;
+        border-color: var(--color1);
+        border-top-style: dotted;
+        background-color: var(--color2);
+        background-size: cover;
+        width: 150%;
+        height: 390vh;
+        display: block;
+        align-items: center;
+    }
+    
+    .rutacomunitaria .contenido-seccion{
+        box-shadow: 0 0 25px var(--color4);
+        background-color: var(--color1);
+        width: 80%;
+        height: 31%;
+        color: var(--color2);
+        margin: 10% 0 0 10%;
+        border-radius: 30px;
+    }
+    
+    .rutacomunitaria h2{
+        font-size: 45px;
+        font-family: var(--font5);
+        text-align: center;
+        padding: 40px 0 22px 0;
+    }
+    
+    .rutacomunitaria .contenido-seccion p{
+        text-align: justify;
+        font-size: 25px;
+        color: var(--color6);
+        line-height: 28px;
+        margin: 15px 30px 25px 30px;
+        font-family: var(--font5);
+    }
+    
+    .rutacomunitaria .contenido-seccion img{
+        text-align: center;
+        border-radius: 10%;
+        width: 70%;
+        margin: 20px 75px;
+    }
+    
+    .rutacomunitaria .contenido-seccion video{
+        text-align: center;
+        width: 80%;
+        margin: 0 10%;
+        border-radius: 15px;
+    }
+    
+    .contactanos {
+        border-width: 10px;
+        border-color: var(--color1);
+        border-top-style: dotted;
+        padding: 60px 0;
+        background-color: var(--color2);
+        background-size: cover;
+        width: 150%;
+        height: 150vh;
+        color: var(--color2);
+    }
+    
+    .contactanos .contenedor{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        border-radius: 40px;
+    }
+    
+    .contactanos .contenedor .contenido-banner{
+        position: absolute;
+        width: 85%;
+        height: 40%;
+        background-color: var(--color1);
+        text-align: center;
+        border-radius: 40px;
+    }
+    
+    .contactanos .contenedor .contenido{
+        position: absolute;
+        width: 85%;
+        height: 40%;
+        padding: 55px 10px;
+        background-color: var(--color4);
+        text-align: center;
+        border-radius: 40px;
+    }
+    
+    .contactanos .contenido:hover {
+        animation: desaparecer 2s linear 0s 1;
+        opacity: 0;
+    }
+    
+    .contactanos .contenido-banner img{
+        border: 6px solid var(--color3);
+        border-radius: 10%;
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .contactanos h1{
+        font-size: 50px;
+        font-family: var(--font4);
+    }
+    
+    .contactanos .contenido-banner h1{
+        padding-top: 20px;
+        font-size: 30px;
+        font-family: var(--font4);
+    }
+    
+    .contactanos h2{
+        margin-top: 65%;
+        text-align: center;
+        color: var(--color4);
+        font-size: 75px;
+        font-family: var(--font2);
+        animation: desaparecer 0.7s linear 2s infinite;
+    }
+    
+    .contactanos .col .contenedorredes{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .contactanos .col .contenedorredes .redes{
+        width: 200px;
+        height: 200px;
+        background-color: var(--color4);
+        border-radius: 50%;
+        margin: 15px 45px 15px 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    
+    .contactanos .col .contenedorredes .redes:hover{
+        font-size: 28px;
+        margin-bottom: 15px;
+        width: 140px;
+        height: 140px;
+        background-color: var(--color4);
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    
+    .contactanos .col .contenedorredes .redes a i{
+        color: var(--color6);
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
+    .contactanos .col .contenedorredes .redes span{
+        color: var(--color6);
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width:780px) and  (min-width:460px) {
+
+
+    .contenedor-header header{
+        margin: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    .contenedor-header header img{
+        margin: 10% 5%;
+        width: 90px;
+    }
+
+    .contenedor-header header nav ul li a{
+        font-size: 170%;
+        font-family: var(--font3);
+        color: var(--color6);
+        margin: 0 8px;
+        padding: 3.5px;
+        transition: .5s;
+        text-decoration: none;
+    }
+
+    .contenedor-header header nav ul li a:hover{
+        font-size: 190%;
+        animation: letrazoom 2s linear 0s infinite;
+    }
+
+    @keyframes letrazoom {
+        25%{
+            font-size: 170%;
+            color: black;
+        }
+        50%{
+            font-size: 190%;
+            color: white;
+        }
+        75%{
+            font-size: 170%;
+            color: black;
+        }
+        100%{
+            font-size: 190%;
+            color: white;
+        }
+    }
+
+    .inicio{
+        padding: 13% 0;
+        background: linear-gradient(to top, rgba(30, 35, 38, .5),rgba(30, 35, 38, .5)),url(fondoinicio.JPG);
+        width: 150%;
+        background-size: cover;
+        display: block;
+        height: 160vh;
+        color: var(--color2);
+        align-items: center;
+    }
+    
+    
+    .inicio .contenido .mitexto h1{
+        font-size: 700%;
+        animation: letraaparece 2s linear 1s 1;
+    }
+    
+    @keyframes letraaparece{
+        0%{
+            opacity: 0;
+            font-size: 700%;
+        }
+        25%{
+            opacity: 0.25;
+            font-size: 650%;
+        }
+        50%{
+            opacity: 0.50;
+            font-size: 600%;
+        }
+        75%{
+            opacity: 0.75;
+            font-size: 550%;
+        }
+        100%{
+            opacity: 1;
+            font-size: 500%;
+        }
+    }
+
+    .inicio .contenidos{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+    }
+
+    .inicio .contenidos .contenidointro {
+        padding: 0;
+        width: 86%;
+        font-family: var(--font1);
+        margin: 0 0 0 8%;
+        text-align: justify;
+        border-radius: 40px;
+    }
+    
+    .inicio .contenidos img {
+        width: 70%;
+        padding-top: 20px;
+        margin: auto;
+        text-align: center;
+        border-radius: 40px;
+    }
+
+    .inicio .contenidos p{
+        padding: 15px;
+        font-size: 280%;
+    }
+
+    .inicio .contenido .redes a{
+        opacity: 0;
+        line-height: 25px;
+        font-size: 15px;
+    }
+    
+    .inicio .contenido .redes a:hover{
+        font-size: 35px;
+    }
+
+    .quienessomos{
+        padding: 0;
+        background: var(--color2);
+        background-size: cover;
+        width: 150%;
+        height: 400vh;
+        align-items: center;
+    }
+    
+    .quienessomos .contenido-seccion{
+        text-align: center;
+        background-image: url(banner.jpg);
+        width: 100%;
+        height: 10%;
+        color: var(--color2);
+        border-radius: 0 0 50% 50%;
+    }
+    
+    .quienessomos .contenido-seccion .contenido h1{
+        color: var(--color6);
+        font-size: 750%;
+        font-family: var(--font6);
+        padding: 4% 0 0 0;
+    }
+    
+    .quienessomos .contenido-seccion .contenido img{
+        padding: 0;
+        width: 95%;
+    }
+    
+    .quienessomos .contenido-banner{
+        text-align: center;
+        width: 100%;
+        margin-top: 0;
+        color: var(--color2);
+    }
+    
+    .quienessomos .contenido-banner .conte-banner{
+        display: block;
+        padding: 0 12%;
+        justify-content: center;
+        width: 100%;
+        height: 130%;
+        margin-top: 0;
+    }
+    
+    .quienessomos .contenido-banner .conte-titulo{
+        text-align: center;
+        margin-top: 0;
+        color: var(--color2);
+    }
+    
+    .quienessomos .contenido-banner .conte-titulo h1{
+        color: var(--color4);
+        font-size: 500%;
+        font-family: var(--font6);
+        padding: 0 0 0 0;
+    }
+    
+    .quienessomos .contenido-banner .conte-banner .contenidos{
+        width: 100%;
+        height: 200%;
+        text-align: center;
+        margin-top: 10%;
+        box-shadow: 2px 2px 5px var(--color4);
+        background-color: var(--color6);
+        color: var(--color2);
+    }
+    
+    .quienessomos .contenido-banner .conte-banner .contenidos h3{
+        color: var(--color1);
+        font-size: 350%;
+        font-family: var(--font5);
+        padding: 20px 0 0 0;
+    }
+    
+    .quienessomos .contenido-banner .conte-banner .contenidos p{
+        margin: 30px;
+        text-align: justify;
+        color: var(--color4);
+        font-size: 35px;
+        font-family: var(--font5);
+    }
+    
+    .quienessomos .contenido-banner .conte-banner .contenidos img{
+        box-shadow: 0 0 45px var(--color1);
+        padding: 0 0 0 0;
+        margin-top: 42px;
+        width: 220px;
+        height: 220px;
+        border-radius: 60%;
+    }
+    
+    .quienessomos .contenido-seccion p{
+        text-align: justify;
+        font-size: 150px;
+        line-height: 35px;
+        margin: 10px 70px 60px 70px;
+    }
+    
+    .quienessomos .contenido-seccion img{
+        padding-top: 2%;
+    }
+
+    .danzas{
+        border-width: 10px;
+        border-color: var(--color1);
+        border-top-style: dotted;
+        background-color: var(--color2);
+        background-size: cover;
+        width: 150%;
+        height: 260vh;
+        align-items: center;
+    }
+    
+    .danzas .contenido-seccion{
+        display: block;
+        width: 100%;
+        height: 45%;
+        color: var(--color2);
+        border-radius: 30px;
+    }
+    
+    .danzas .contenido-seccion .contenidotexto{
+        margin: 10% 10%;
+        background-color: var(--color1);
+        width: 80%;
+        height: 40%;
+        color: var(--color2);
+        border-radius: 30px;
+    }
+    
+    .danzas .contenido-seccion .contenidoimg{
+        margin: 10% 10%;
+        text-align: center;
+        width: 80%;
+        height: 45%;
+        color: var(--color2);
+        border-radius: 30px;
+    }
+    
+    .danzas .contenido-seccion img{
+        box-shadow: 0 0 45px var(--color4);
+        height: 100%;
+        border-radius: 40px;
+    }
+    
+    .danzas .contenido-seccion p{
+        text-align: justify;
+        padding: 15px 30px;
+        font-size: 43px;
+        font-family: var(--font5);
+        color: var(--color6);
+    }
+
+    .musica{
+        border-width: 10px;
+        border-color: var(--color1);
+        border-top-style: dotted;
+        background-color: var(--color2);
+        background-size: cover;
+        width: 150%;
+        height: 600vh;
+        align-items: center;
+    }
+    
+    .musica .contenido-seccion{
+        display: block;
+        width: 100%;
+        height: 32%;
+        color: var(--color2);
+        margin: 35px 0 0 0;
+        border-radius: 30px;
+    }
+    
+    .musica .contenido-seccion .contenidotexto{
+        margin-left: 10%;
+        background-color: var(--color4);
+        width: 80%;
+        height: 33%;
+        color: var(--color2);
+        border-radius: 30px;
+    }
+    
+    .musica .contenido-seccion .contenidoimg{
+        margin: 0 0 0 0;
+        padding: 25px;
+        width: 100%;
+        height: 33%;
+        color: var(--color2);
+    }
+    
+    .musica .contenido-seccion .contenidoimg1{
+        margin: 0 0 0 0;
+        padding: 25px;
+        background-color: var(--color2);
+        width: 100%;
+        height: 33%;
+        color: var(--color2);
+    }
+    
+    .musica .contenido-seccion .contenidoimg2{
+        margin: 0 70px 0 0;
+        padding: 25px;
+        background-color: var(--color2);
+        width: 100%;
+        height: 33%;
+        color: var(--color2);
+    }
+    
+    .musica .contenido-seccion img{
+        box-shadow: 0 0 45px var(--color1);
+        width: 70%;
+        height: 100%;
+        border-radius: 20%;
+    }
+    
+    .musica .contenido-seccion p{
+        text-align: justify;
+        padding: 20px 20px;
+        font-size: 48px;
+        font-family: var(--font6);
+        color: var(--color6);
+    }
+
+    .rutacomunitaria{
+        border-width: 10px;
+        border-color: var(--color1);
+        border-top-style: dotted;
+        background-color: var(--color2);
+        background-size: cover;
+        width: 150%;
+        height: 590vh;
+        display: block;
+        align-items: center;
+    }
+    
+    .rutacomunitaria .contenido-seccion{
+        box-shadow: 0 0 25px var(--color4);
+        background-color: var(--color1);
+        width: 80%;
+        height: 31%;
+        color: var(--color2);
+        margin: 10% 0 0 10%;
+        border-radius: 30px;
+    }
+    
+    .rutacomunitaria h2{
+        font-size: 80px;
+        font-family: var(--font5);
+        text-align: center;
+        padding: 40px 0 22px 0;
+    }
+    
+    .rutacomunitaria .contenido-seccion p{
+        text-align: justify;
+        font-size: 55px;
+        color: var(--color6);
+        line-height: 55px;
+        margin: 15px 30px 25px 30px;
+        font-family: var(--font5);
+    }
+    
+    .rutacomunitaria .contenido-seccion img{
+        text-align: center;
+        border-radius: 10%;
+        width: 70%;
+        margin: 20px 150px;
+    }
+    
+    .rutacomunitaria .contenido-seccion video{
+        text-align: center;
+        width: 80%;
+        margin: 0 10%;
+        border-radius: 15px;
+    }
+    
+    .contactanos {
+        border-width: 10px;
+        border-color: var(--color1);
+        border-top-style: dotted;
+        padding: 150px 0;
+        background-color: var(--color2);
+        background-size: cover;
+        width: 150%;
+        height: 180vh;
+        color: var(--color2);
+    }
+    
+    .contactanos .contenedor{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        border-radius: 40px;
+    }
+    
+    .contactanos .contenedor .contenido-banner{
+        position: absolute;
+        width: 85%;
+        height: 65%;
+        background-color: var(--color1);
+        text-align: center;
+        border-radius: 40px;
+    }
+    
+    .contactanos .contenedor .contenido{
+        position: absolute;
+        width: 85%;
+        height: 65%;
+        padding: 55px 10px;
+        background-color: var(--color4);
+        text-align: center;
+        border-radius: 40px;
+    }
+    
+    .contactanos .contenido:hover {
+        animation: desaparecer 2s linear 0s 1;
+        opacity: 0;
+    }
+    
+    .contactanos .contenido-banner img{
+        border: 6px solid var(--color3);
+        border-radius: 10%;
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .contactanos h1{
+        font-size: 105px;
+        font-family: var(--font4);
+    }
+    
+    .contactanos .contenido-banner h1{
+        padding-top: 25px;
+        font-size: 70px;
+        font-family: var(--font4);
+    }
+    
+    .contactanos h2{
+        margin-top: 65%;
+        text-align: center;
+        color: var(--color4);
+        font-size: 100px;
+        font-family: var(--font2);
+        animation: desaparecer 0.7s linear 2s infinite;
+    }
+    
+    .contactanos .col .contenedorredes{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .contactanos .col .contenedorredes .redes{
+        width: 350px;
+        height: 350px;
+        background-color: var(--color4);
+        border-radius: 50%;
+        margin: 15px 45px 15px 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    
+    .contactanos .col .contenedorredes .redes:hover{
+        font-size: 180px;
+        margin-bottom: 15px;
+        width: 380px;
+        height: 380px;
+        background-color: var(--color4);
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    
+    .contactanos .col .contenedorredes .redes a i{
+        color: var(--color6);
+        font-size: 120px;
+        margin-bottom: 10px;
+    }
+
+    .contactanos .col .contenedorredes .redes span{
+        color: var(--color6);
+        font-size: 50px;
         margin-bottom: 10px;
     }
 
