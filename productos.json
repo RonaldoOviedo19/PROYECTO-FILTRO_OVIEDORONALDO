@@ -1,0 +1,42 @@
+[
+    {
+        "titulo": "Gorra Pola o Miedo",
+        "precio": "25000",
+        "imagen": "https://soyrustiko.com/cdn/shop/products/gorra-pola-o-miedo-redonda-234997.jpg?v=1678942735"
+    },
+    {
+        "titulo": "Gorra AB Malla",
+        "precio": "35000",
+        "imagen": "https://scontent.fbga3-1.fna.fbcdn.net/v/t39.30808-6/448004338_18229270438272623_838751041632290650_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=W0tC2l2xfu4Q7kNvgFlNOgx&_nc_ht=scontent.fbga3-1.fna&oh=00_AYA68BrqIXW08rSOQU2MCFzWygTl_zhKFx_W6wVHOPHA6Q&oe=66D790F8"
+    },
+    {
+        "titulo": "Camisa AB Leopardo",
+        "precio": "75000",
+        "imagen": "https://www.ticbu.com/cdn/shop/files/CAMISA_FRENTE_AMARILLA_ESTRELLA.jpg?v=1718509247"
+    },
+    {
+        "titulo": "Chaqueta Nasa",
+        "precio": "145000",
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_619083-CBT76848658707_062024-E.webp"
+    },
+    {
+        "titulo": "Gafas Prada",
+        "precio": "115000",
+        "imagen": "https://down-co.img.susercontent.com/file/ad69dc597a9e9b63067665635722e9d5"
+    },
+    {
+        "titulo": "Camisa Liverpool",
+        "precio": "120000",
+        "imagen": "https://nikeco.vtexassets.com/arquivos/ids/200493/125863501891.jpg?v=638343787555970000"
+    },
+    {
+        "titulo": "Guayos Adidas",
+        "precio": "250000",
+        "imagen": "https://storechampions.com/wp-content/uploads/2023/04/d4808974-3d72-4e3b-9335-ad2e5ce8c9a4.jpg"
+    },
+    {
+        "titulo": "Conjunto Adidas",
+        "precio": "400000",
+        "imagen": "https://www.parati.com.ar/wp-content/uploads/2022/11/Ftn_110322_Balenciaga_x_Adidas0006-740x925.jpg.webp"
+    }
+]

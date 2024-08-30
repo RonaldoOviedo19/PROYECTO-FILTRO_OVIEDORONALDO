@@ -1,39 +1,57 @@
 var carritoVisible = false;
 
-if(document.readyState == 'loading'){
-    document.addEventListener('DOMContentLoaded', ready)
-}else{
-    ready();
-}
+document.addEventListener('DOMContentLoaded', ready);
 
 function ready(){
+    fetch('productos.json') // Cargar el archivo JSON
+        .then(response => response.json())
+        .then(data => cargarProductos(data)) // Llama a la función para cargar los productos
+        .catch(error => console.error('Error al cargar el JSON:', error));
+
+    inicializarEventosCarrito();
+}
+
+function cargarProductos(productos) {
+    const contenedorItems = document.getElementsByClassName('contenedor-items')[0];
     
+    productos.forEach(producto => {
+        const itemHTML = `
+        <div class="item">
+            <span class="titulo-item">${producto.titulo}</span>
+            <img class="img-item" src="${producto.imagen}" alt="">
+            <span class="precio-item">$${producto.precio}</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>`;
+        
+        const itemElement = document.createElement('div');
+        itemElement.innerHTML = itemHTML;
+        contenedorItems.appendChild(itemElement);
+
+        // Añadir evento al botón de agregar al carrito
+        itemElement.getElementsByClassName('boton-item')[0].addEventListener('click', agregarAlCarritoClicked);
+    });
+}
+
+function inicializarEventosCarrito() {
     var botonesEliminarItem = document.getElementsByClassName('btn-eliminar');
-    for(var i=0;i<botonesEliminarItem.length; i++){
+    for (var i = 0; i < botonesEliminarItem.length; i++) {
         var button = botonesEliminarItem[i];
-        button.addEventListener('click',eliminarItemCarrito);
+        button.addEventListener('click', eliminarItemCarrito);
     }
 
     var botonesSumarCantidad = document.getElementsByClassName('sumar-cantidad');
-    for(var i=0;i<botonesSumarCantidad.length; i++){
+    for (var i = 0; i < botonesSumarCantidad.length; i++) {
         var button = botonesSumarCantidad[i];
-        button.addEventListener('click',sumarCantidad);
+        button.addEventListener('click', sumarCantidad);
     }
-
 
     var botonesRestarCantidad = document.getElementsByClassName('restar-cantidad');
-    for(var i=0;i<botonesRestarCantidad.length; i++){
+    for (var i = 0; i < botonesRestarCantidad.length; i++) {
         var button = botonesRestarCantidad[i];
-        button.addEventListener('click',restarCantidad);
+        button.addEventListener('click', restarCantidad);
     }
 
-    var botonesAgregarAlCarrito = document.getElementsByClassName('boton-item');
-    for(var i=0; i<botonesAgregarAlCarrito.length;i++){
-        var button = botonesAgregarAlCarrito[i];
-        button.addEventListener('click', agregarAlCarritoClicked);
-    }
-
-    document.getElementsByClassName('btn-pagar')[0].addEventListener('click',pagarClicked)
+    document.getElementsByClassName('btn-pagar')[0].addEventListener('click', pagarClicked);
 }
 
 function pagarClicked(){
